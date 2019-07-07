@@ -6,6 +6,7 @@ import static org.junit.Assert.fail;
 import static org.hamcrest.CoreMatchers.*;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
@@ -52,7 +53,7 @@ public class MyArrayListTest {
 		for (int i = 4; i < 20; i++) {
 			mylist.add(i);
 		}
-		//System.out.println(Arrays.toString(mal.toArray()));
+		System.out.println(Arrays.toString(mylist.toArray()));
 		assertThat(mylist.get(18), is(new Integer(19)));
 	}
 
@@ -79,6 +80,7 @@ public class MyArrayListTest {
 		mylist.add(0, 6);
 		//System.out.println(Arrays.toString(mal.toArray()));
 		assertThat(mylist.get(0), is(6));
+		System.out.println();
 
 		mylist.add(5, 7);
 		//System.out.println(Arrays.toString(mal.toArray()));

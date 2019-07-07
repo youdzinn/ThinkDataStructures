@@ -1,5 +1,7 @@
 package com.allendowney.thinkdast;
 
+
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -9,7 +11,7 @@ public class ListClientExample {
 
 	@SuppressWarnings("rawtypes")
 	public ListClientExample() {
-		list = new LinkedList();
+		list = new ArrayList();
 	}
 
 	@SuppressWarnings("rawtypes")
